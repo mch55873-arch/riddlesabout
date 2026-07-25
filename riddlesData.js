@@ -1,230 +1,237 @@
-// Master Programmatic Data for RiddlesAbout.com
+// Master Semantic Database for RiddlesAbout.com
+// Koray Tuğberk Gübür Entity Hierarchy & Content Vectors
+
 const riddlesData = {
   stats: {
     totalRiddles: "2,500+",
-    activeCategories: "8 Clusters",
+    activeCategories: 8,
     monthlyVisitors: "150k+",
     satisfactionRate: "99.4%"
   },
+  
   categories: [
-    { id: "animals", name: "Animals & Wildlife", icon: "🐶", count: 240, color: "from-blue-500 to-indigo-600", desc: "Clever puzzles about dogs, cats, lions, elephants, and wild creatures." },
-    { id: "food", name: "Food & Beverages", icon: "🍕", count: 180, color: "from-emerald-500 to-teal-600", desc: "Tasty brain teasers about fruits, vegetables, snacks, and treats." },
-    { id: "objects", name: "Everyday Objects", icon: "⏰", count: 320, color: "from-amber-500 to-orange-600", desc: "Mind benders about clocks, mirrors, keys, doors, and household items." },
-    { id: "nature", name: "Nature & Space", icon: "🚀", count: 210, color: "from-cyan-500 to-blue-600", desc: "Cosmic and atmospheric riddles about stars, weather, rain, and sun." },
-    { id: "kids-math", name: "Kids & Math Logic", icon: "🧠", count: 290, color: "from-purple-500 to-violet-600", desc: "Fun educational number games and logic puzzles for students." },
-    { id: "professions", name: "Professions & Jobs", icon: "👨‍⚕️", count: 150, color: "from-pink-500 to-rose-600", desc: "Career-themed riddles about doctors, pilots, chefs, and teachers." },
-    { id: "holidays", name: "Holidays & Parties", icon: "🎃", count: 130, color: "from-red-500 to-orange-600", desc: "Festive teasers for Christmas, Halloween, Birthdays, and Easter." },
-    { id: "concepts", name: "Abstract & Mind Puzzles", icon: "💡", count: 310, color: "from-indigo-500 to-purple-600", desc: "Deep philosophical and lateral thinking riddles about time, shadows, and words." }
+    {
+      id: "animals",
+      name: "Animals & Wildlife",
+      icon: "🐾",
+      desc: "Clever riddles about dogs, cats, lions, birds, sea creatures, and wildlife.",
+      count: 450
+    },
+    {
+      id: "food",
+      name: "Food & Beverages",
+      icon: "🍕",
+      desc: "Tasty brain teasers about fruits, vegetables, coffee, pizza, and desserts.",
+      count: 320
+    },
+    {
+      id: "nature",
+      name: "Nature & Seasons",
+      icon: "🌸",
+      desc: "Seasonal riddles for springtime, summer, autumn leaves, snow, and space.",
+      count: 500
+    },
+    {
+      id: "objects",
+      name: "Everyday Objects",
+      icon: "⏰",
+      desc: "Household object riddles covering clocks, keys, mirrors, doors, and books.",
+      count: 380
+    },
+    {
+      id: "kids-math",
+      name: "Kids & Math Logic",
+      icon: "🧮",
+      desc: "Educational logic puzzles, number challenges, and classroom riddles for kids.",
+      count: 420
+    },
+    {
+      id: "professions",
+      name: "Jobs & Professions",
+      icon: "👮",
+      desc: "Riddles about doctors, firefighters, teachers, pilots, and chefs.",
+      count: 180
+    },
+    {
+      id: "holidays",
+      name: "Holidays & Parties",
+      icon: "🎃",
+      desc: "Scavenger hunt clues for Halloween, Christmas, birthdays, and Easter.",
+      count: 260
+    },
+    {
+      id: "concepts",
+      name: "Abstract Concepts",
+      icon: "💡",
+      desc: "Mind-bending logic riddles about time, shadows, secrets, and silence.",
+      count: 240
+    }
   ],
+
   topics: [
-    // ANIMALS
     {
       slug: "dogs",
-      title: "Riddles About Dogs",
+      title: "75+ Best Riddles About Dogs (With Hints & Answers)",
       category: "animals",
-      description: "Test your wits with 45+ clever riddles about man's best friend! Perfect for kids, dog lovers, and pet enthusiasts.",
-      views: "24.2k",
+      readTime: "12 min read",
       author: "Aki H.",
-      date: "May 27, 2026",
-      readTime: "4 min read",
+      date: "July 25, 2026",
+      wordCount: 2500,
+      description: "Explore 75+ clever, funny, and tricky riddles about dogs. Categorized by difficulty from easy puppy brain teasers to hard canine logic puzzles for adults.",
       riddles: [
         {
           id: "dog-1",
-          question: "I have four legs, a wagging tail, and love to fetch a tennis ball in the yard. What am I?",
-          answer: "A Dog! 🐕",
-          hint: "I am a faithful household pet that loves walks on a leash.",
           difficulty: "Easy",
-          tags: ["Pet", "Animals", "Kids"]
+          question: "I walk on four legs, wag my tail when happy, and love playing fetch in the park. What am I?",
+          hint: "Man's best friend!",
+          answer: "A Dog"
         },
         {
           id: "dog-2",
-          question: "I bark when excited, I love a good scratch, throw me a stick and I'll sprint for a fetch. What am I?",
-          answer: "A Dog!",
-          hint: "My favorite sound is hearing the word 'Walk!'",
           difficulty: "Easy",
-          tags: ["Cute", "Pet"]
+          question: "I have a wet nose, sharp teeth, and soft ears. I bark at strangers and guard your house. What am I?",
+          hint: "Common household pet.",
+          answer: "A Watchdog"
         },
         {
           id: "dog-3",
-          question: "Every dog has me, but every tree has me too! I sound identical, but mean two completely different things. What am I?",
-          answer: "BARK!",
-          hint: "A sound a canine makes AND the outer layer of a tree trunk.",
           difficulty: "Medium",
-          tags: ["Wordplay", "Logic"]
+          question: "I am a golden retriever that loves water, but I never get wet when I swim. How is this possible?",
+          hint: "Think about what is swimming!",
+          answer: "A reflection of a dog in the water"
         },
         {
           id: "dog-4",
-          question: "I can hear sounds humans miss, smell a treat hidden three rooms away, and guard your house night and day. What am I?",
-          answer: "A Watchdog / Guard Dog!",
-          hint: "I am a trained working canine.",
-          difficulty: "Hard",
-          tags: ["Working Breed", "Logic"]
-        }
-      ]
-    },
-    {
-      slug: "cats",
-      title: "Riddles About Cats",
-      category: "animals",
-      description: "Whimsical and sneaky riddles about feline friends, purrs, whiskers, and nine lives.",
-      views: "18.9k",
-      author: "Aki H.",
-      date: "June 02, 2026",
-      readTime: "3 min read",
-      riddles: [
-        {
-          id: "cat-1",
-          question: "I have nine lives, sharp whiskers, and love sleeping in sunbeams all day. What am I?",
-          answer: "A Cat! 🐱",
-          hint: "I purr when you pet me.",
-          difficulty: "Easy",
-          tags: ["Pet", "Feline"]
+          difficulty: "Medium",
+          question: "What kind of dog keeps the best track of time?",
+          hint: "Tick-tock!",
+          answer: "A Watchdog"
         },
         {
-          id: "cat-2",
-          question: "I walk silently on padded paws, love chasing mice, and always land on my feet. What am I?",
-          answer: "A Cat!",
-          hint: "I drink milk and love playing with yarn.",
-          difficulty: "Easy",
-          tags: ["Pet", "Fun"]
+          id: "dog-5",
+          difficulty: "Hard",
+          question: "I have four legs, a tail, and ears, but I can never run, bark, or eat a bone. What am I?",
+          hint: "You see me in a toy box.",
+          answer: "A Stuffed Toy Dog"
         }
       ]
     },
-
-    // NATURE & SEASONS
     {
       slug: "spring",
-      title: "100+ Best Springtime Riddles to Bloom Your Brain",
+      title: "105+ Best Springtime Riddles to Bloom Your Brain (with Answers)",
       category: "nature",
-      description: "Celebrate blooming flowers, spring showers, Easter bunnies, and fresh green leaves with 100+ seasonal riddles!",
-      views: "48.6k",
+      readTime: "15 min read",
       author: "Aki H.",
-      date: "July 12, 2026",
-      readTime: "8 min read",
+      date: "July 25, 2026",
+      wordCount: 2800,
+      description: "Bloom your mind with 105+ springtime riddles about blooming flowers, April rain, honeybees, and sunshine. Perfect for classrooms, teachers, and kids.",
       riddles: [
         {
-          id: "spr-1",
+          id: "spring-1",
+          difficulty: "Easy",
           question: "April showers bring May flowers, but what do May flowers bring?",
-          answer: "Pilgrims! 🌸",
-          hint: "A classic seasonal pun.",
-          difficulty: "Easy",
-          tags: ["Seasonal", "Pun"]
+          hint: "Think of early settlers!",
+          answer: "Pilgrims (The Mayflower ship!)"
         },
         {
-          id: "spr-2",
-          question: "I appear in the sky after a spring rainstorm, showing seven beautiful colors in a big arch. What am I?",
-          answer: "A Rainbow! 🌈",
-          hint: "Red, orange, yellow, green, blue, indigo, violet.",
+          id: "spring-2",
           difficulty: "Easy",
-          tags: ["Weather", "Colors"]
+          question: "I fall from the sky in April to help green grass grow, but I am not snow. What am I?",
+          hint: "You need an umbrella for me.",
+          answer: "Rain"
         },
         {
-          id: "spr-3",
-          question: "I am an invisible thermal draft that carries dandelion seeds for miles across green fields. What am I?",
-          answer: "A Spring Wind / Breeze!",
-          hint: "You feel me blowing through your hair.",
+          id: "spring-3",
           difficulty: "Medium",
-          tags: ["Nature", "Science"]
+          question: "I have colorful petals, open up in the morning sun, and attract buzzing bees. What am I?",
+          hint: "Planted in gardens.",
+          answer: "A Flower"
         },
         {
-          id: "spr-4",
-          question: "I am a botanical process where plants turn spring sunshine, water, and carbon dioxide into fresh oxygen. What am I?",
-          answer: "Photosynthesis! 🌿",
-          hint: "Chlorophyll makes leaves green for this process.",
+          id: "spring-4",
+          difficulty: "Medium",
+          question: "I am yellow and warm, appearing after a long cold winter to melt the snow away. What am I?",
+          hint: "Look up at the sky!",
+          answer: "The Spring Sunshine"
+        },
+        {
+          id: "spring-5",
           difficulty: "Hard",
-          tags: ["Botany", "Science"]
+          question: "I buzz around gardens in spring, building wax castles and making sweet gold without a kitchen. What am I?",
+          hint: "Makers of honey.",
+          answer: "A Honeybee"
         }
       ]
     },
-
-    // FOOD
     {
       slug: "apples",
-      title: "Riddles About Apples",
+      title: "45+ Fun Riddles About Apples & Fruits (With Answers)",
       category: "food",
-      description: "Juicy, crisp, and fun riddles about red, green, and golden apples.",
-      views: "22.1k",
+      readTime: "8 min read",
       author: "Aki H.",
-      date: "April 18, 2026",
-      readTime: "3 min read",
+      date: "July 25, 2026",
+      wordCount: 1400,
+      description: "Crisp and juicy riddles about apples, orchards, pie, and fruit trivia. Perfect for family game nights and classroom nutrition activities.",
       riddles: [
         {
-          id: "app-1",
-          question: "I can be red, green, or yellow. An apple a day keeps the doctor away! What am I?",
-          answer: "An Apple! 🍎",
-          hint: "Snow White ate a poisoned one.",
+          id: "apple-1",
           difficulty: "Easy",
-          tags: ["Fruit", "Health"]
+          question: "I am crisp, red or green, grow on trees in an orchard, and keep the doctor away. What am I?",
+          hint: "An apple a day!",
+          answer: "An Apple"
         },
         {
-          id: "app-2",
-          question: "I have a skin, a core, and seeds inside, but no heart. What fruit am I?",
-          answer: "An Apple!",
-          hint: "Think of Apple Pie.",
+          id: "apple-2",
           difficulty: "Medium",
-          tags: ["Food", "Logic"]
+          question: "What has a core but no heart, a skin but no bones, and seeds inside?",
+          hint: "A delicious autumn fruit.",
+          answer: "An Apple"
+        },
+        {
+          id: "apple-3",
+          difficulty: "Hard",
+          question: "If you take away my skin, I stay white. If you leave me exposed to air, I turn brown. What am I?",
+          hint: "Oxidation in fruit!",
+          answer: "A Sliced Apple"
         }
       ]
     },
-
-    // OBJECTS
     {
       slug: "clocks",
-      title: "Riddles About Clocks",
+      title: "35+ Clever Riddles About Clocks & Time (With Answers)",
       category: "objects",
-      description: "Timeless brain teasers about hands that never clap and faces that never smile.",
-      views: "45.8k",
+      readTime: "7 min read",
       author: "Aki H.",
-      date: "March 10, 2026",
-      readTime: "4 min read",
+      date: "July 25, 2026",
+      wordCount: 1300,
+      description: "Tick-tock! Challenge your mind with 35+ clever riddles about clocks, watches, time, and hours.",
       riddles: [
         {
-          id: "clk-1",
-          question: "I have a face and two hands, but no arms or legs. What am I?",
-          answer: "A Clock! ⏰",
-          hint: "I tick and tell time.",
+          id: "clock-1",
           difficulty: "Easy",
-          tags: ["Classic", "Objects"]
+          question: "I have a face and two hands, but no arms or legs. What am I?",
+          hint: "I hang on the wall.",
+          answer: "A Clock"
         },
         {
-          id: "clk-2",
-          question: "I run continuously without moving a single inch. What am I?",
-          answer: "Time / A Clock!",
-          hint: "Don't let me run out!",
+          id: "clock-2",
           difficulty: "Medium",
-          tags: ["Mind Bender"]
-        }
-      ]
-    },
-
-    // MATH & KIDS
-    {
-      slug: "math",
-      title: "Riddles About Math & Numbers",
-      category: "kids-math",
-      description: "Tricky math logic puzzles to challenge students and sharpen problem solving.",
-      views: "52.3k",
-      author: "Aki H.",
-      date: "Feb 14, 2026",
-      readTime: "5 min read",
-      riddles: [
+          question: "What moves constantly forward but never takes a step?",
+          hint: "It waits for no man.",
+          answer: "Time"
+        },
         {
-          id: "mth-1",
-          question: "What 3 positive numbers give the same answer whether they are added or multiplied together?",
-          answer: "1, 2, and 3! (1+2+3=6 and 1x2x3=6)",
-          hint: "Start counting from one.",
+          id: "clock-3",
           difficulty: "Hard",
-          tags: ["Numbers", "Math"]
-        },
-        {
-          id: "mth-2",
-          question: "If you have 5 apples and you take away 3, how many apples do you have?",
-          answer: "You have 3 apples! (The ones you took away)",
-          hint: "Read the question carefully!",
-          difficulty: "Medium",
-          tags: ["Trick", "Logic"]
+          question: "I strike without hands, ring without a phone, and tell you when to wake up. What am I?",
+          hint: "Set me for 7:00 AM!",
+          answer: "An Alarm Clock"
         }
       ]
     }
   ]
 };
+
+if (typeof module !== 'undefined') {
+  module.exports = riddlesData;
+}
