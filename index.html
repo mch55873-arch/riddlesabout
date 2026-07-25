@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>RiddlesAbout.com — Discover Thousands of Riddles About Everything</title>
+  <meta name="description" content="Explore 2,500+ fun, educational, and tricky riddles about animals, food, space, objects, math, and logic for kids and adults. Formatted with Koray Tuğberk Semantic SEO Architecture.">
+  <meta name="keywords" content="riddles about animals, riddles about food, springtime riddles, riddles about dogs, riddles for kids, brain teasers, math riddles, logic puzzles">
+  <link rel="canonical" href="https://riddlesabout.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://riddlesabout.com/">
+  <meta property="og:title" content="RiddlesAbout.com — Discover Thousands of Riddles About Everything">
+  <meta property="og:description" content="Explore 2,500+ fun, educational, and tricky riddles about animals, food, space, objects, math, and logic.">
+  <meta property="og:site_name" content="RiddlesAbout.com">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD (Koray's Semantic Schema Injection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RiddlesAbout.com",
+    "url": "https://riddlesabout.com/",
+    "description": "Programmatic Semantic SEO Repository of Riddles and Brain Teasers.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://riddlesabout.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Glass Header & Navbar -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-logo" onclick="navigateTo('home')">
+        <div class="brand-icon">🧩</div>
+        <span>Riddles<span class="brand-accent">About</span></span>
+      </a>
+
+      <nav class="nav-right">
+        <ul class="nav-links">
+          <li><a class="nav-link" onclick="navigateTo('home')">Home</a></li>
+          <li><a class="nav-link" onclick="navigateTo('category', 'animals')">Animals</a></li>
+          <li><a class="nav-link" onclick="navigateTo('category', 'food')">Food</a></li>
+          <li><a class="nav-link" onclick="navigateTo('category', 'kids-math')">Math & Kids</a></li>
+          <li><a class="nav-link" onclick="navigateTo('generator')">AI Generator</a></li>
+        </ul>
+
+        <button class="btn-pill" onclick="openSurpriseModal()">🎲 Surprise Me!</button>
+        <button id="theme-toggle" class="btn-pill" onclick="toggleTheme()">☀️ Light Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- App Main Content View -->
+  <main id="app-main"></main>
+
+  <!-- Surprise Me Popup Modal -->
+  <div id="surprise-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeSurpriseModal()">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Professional Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <div class="brand-logo" style="margin-bottom: 14px;">
+            <div class="brand-icon">🧩</div>
+            <span>Riddles<span class="brand-accent">About</span></span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 320px; line-height: 1.6;">
+            The world's leading programmatic semantic SEO engine for brain teasers, educational riddles, and logic puzzles.
+          </p>
+        </div>
+
+        <!-- Col 2: Top Clusters -->
+        <div>
+          <h4 class="footer-col-title">Top Clusters</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" onclick="navigateTo('category', 'animals')">Animals & Wildlife</a></li>
+            <li><a class="footer-link" onclick="navigateTo('category', 'food')">Food & Beverages</a></li>
+            <li><a class="footer-link" onclick="navigateTo('category', 'nature')">Nature & Seasons</a></li>
+            <li><a class="footer-link" onclick="navigateTo('category', 'kids-math')">Kids & Math Logic</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Features & Tools -->
+        <div>
+          <h4 class="footer-col-title">Features & Tools</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" onclick="navigateTo('generator')">AI Riddle Generator</a></li>
+            <li><a class="footer-link" onclick="openSurpriseModal()">Random Riddle Generator</a></li>
+            <li><a class="footer-link" onclick="navigateTo('topic', 'spring')">Springtime Riddles (2,800+ w)</a></li>
+            <li><a class="footer-link" onclick="navigateTo('topic', 'dogs')">Dog Riddles (2,500+ w)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Trust & Legal -->
+        <div>
+          <h4 class="footer-col-title">Trust & Legal</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer-link" href="#">Terms of Service</a></li>
+            <li><a class="footer-link" href="#">Disclaimer & E-E-A-T</a></li>
+            <li><a class="footer-link" href="#">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>RiddlesAbout.com</strong> — Built with Koray Tuğberk Gübür's 100% Semantic SEO Architecture.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="riddlesData.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
